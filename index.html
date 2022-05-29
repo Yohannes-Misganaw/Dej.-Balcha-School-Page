@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dejazmach Balcha Aba Nefso General Secondary School</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#">
+          <img src="images/Balcha-logo.png" class="balcha" alt="logo" />
+        </a>
+        <a class="logo" href="#"
+          >Dejazmach Balcha Aba Nefso<span> General Secondary School</span></a
+        >
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Open Navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+          />
+
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="Students.html">Students</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="About.html">About this site</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li class="contact-cta">
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">
+            WELCOME TO DEJAZMACH BALCHA ABA NEFSO GENERAL SECONDARY SCHOOL
+          </p>
+          <h1>Quality Education for all.</h1>
+
+          <div class="hero-cta">
+            <a href="Contact.html" class="primary-cta">Contact</a>
+          </div>
+        </div>
+
+        <img src="images/Balcha_Safo.png" class="hero-img" alt="Illustration" />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>
+            We provide a quality education that prepares all of our students for
+            success in college, career and life.
+          </li>
+          <li>
+            Our aim is to deliver a deeper learning that empowers the everyone
+            so they can unleash thier potential within and way beyond the
+            classroom.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/gezahegn.jpg" alt="Person" />
+
+            <blockquote>
+              "Encouragement, understanding, empathy, fairness and firmness are the foundation 
+
+              for children to have a caring, nurturing and enriching learning experience."
+              
+            </blockquote>
+            <cite>Gezahegn Ajeme</cite>
+          </li>
+          <li>
+            <img src="images/belay.jpg" alt="Person" />
+
+            <blockquote>
+              "Do not confine your children to your own learning, for they were born in another time."
+            </blockquote>
+            <cite>Belay </cite>
+          </li>
+          <li>
+            <img src="images/jemal.jpg" alt="Person" />
+
+            <blockquote>
+              "We believe that all children are capable of great things."
+            </blockquote>
+            <cite>Jemal </cite>
+          </li>
+          <li>
+            <img src="images/adis.jpg" alt="Person" />
+
+            <blockquote>
+              "Courage is not the absence of fear. It’s knowing there are more important things in life."
+            </blockquote>
+            <cite>Addis </cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>

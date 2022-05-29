@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dejazmach Balcha Aba Nefso General Secondary School</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html">
+          <img src="images/Balcha-logo.png" class="balcha" alt="logo"
+        /></a>
+        <a class="logo" href="index.html"
+          >Dejazmach Balcha Aba Nefso<span> General Secondary School</span></a
+        >
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Open Navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+          />
+
+          <ul class="primary-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Students.html">Students</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="About.html">About this site</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send message"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/location.png" alt="Person" />
+
+            <a href="https://goo.gl/maps/W5BuetCCtbh1hnGt8" target="_blank"
+              ><p>Google location</p></a
+            >
+          </li>
+
+          <li>
+            <img src="images/Email.png" alt="Person" />
+            <p>Po. Box</p>
+          </li>
+
+          <li>
+            <img src="images/phone.png" alt="Person" />
+            <p>Phone No: +2511</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
